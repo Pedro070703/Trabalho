@@ -2,13 +2,13 @@ const z = require("zod")
 
 const recipeSchema = z.object({
     name: z.string({
-        required_error: "Invalid name."
+        required_error: "Nome invalido"
     }),
     description: z.string({
-        required_error: "Invalid description."
+        required_error: "descriçao invalida"
     }),
     preparationTime: z.number({
-        required_error: "Invalid preparation time."
+        required_error: "tempo de preparaçao invalido"
     }).min(3)
 })
 
